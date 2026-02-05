@@ -629,7 +629,7 @@
       
       <div class="price-tags">
         <span class="price-tag">$5 per square</span>
-        <span class="price-tag" style="background: rgba(34,197,94,0.15); border-color: rgba(34,197,94,0.3); color: #22c55e;">Winner Takes All!</span>
+        <span class="price-tag" style="background: rgba(34,197,94,0.15); border-color: rgba(34,197,94,0.3); color: #22c55e;">$250 Halftime • $250 Final</span>
       </div>
       
       <div class="how-it-works">
@@ -732,22 +732,15 @@
 
   <script>
     // ===========================================
-    // CONFIGURATION - UPDATE THESE VALUES
+    // CONFIGURATION
     // ===========================================
     const CONFIG = {
-      // Your Google Sheet ID (from the URL: https://docs.google.com/spreadsheets/d/SHEET_ID/edit)
-      SHEET_ID: 'YOUR_GOOGLE_SHEET_ID_HERE',
-      
-      // Your Google API Key
-      API_KEY: 'YOUR_GOOGLE_API_KEY_HERE',
-      
-      // Google Form submission URL (from form's prefilled link)
-      FORM_URL: 'YOUR_GOOGLE_FORM_URL_HERE',
-      
-      // Form field IDs (from the form's HTML)
+      SHEET_ID: '1FEv1SSWbHt-zqz5hJfso4TkyVOu9yLNU9jEz7KJProk',
+      API_KEY: 'AIzaSyD_aMYuNWr-4Eic80rW2rvRDogHpxOwoow',
+      FORM_URL: 'https://docs.google.com/forms/d/e/1FAIpQLSe5qOGy7WELZLfz7nMRu5eqjFott9wBRwawo8ZEBGP3fpX_HA/formResponse',
       FORM_FIELDS: {
-        name: 'entry.XXXXXXXXXX',
-        squares: 'entry.XXXXXXXXXX'
+        name: 'entry.338392548',
+        squares: 'entry.2075961659'
       }
     };
     // ===========================================
@@ -980,7 +973,6 @@
           const owner = squares[key];
           const pendingName = pending[key];
           const isSelected = selectedSquares.includes(key);
-          const isWinner = key === winningKey;
           
           let className = 'square';
           let content = '';
